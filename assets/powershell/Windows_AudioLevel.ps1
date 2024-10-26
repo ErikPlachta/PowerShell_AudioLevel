@@ -44,10 +44,10 @@ function Set-AudioLevel {
     }
 
     # 4. Calculate the exact number of Volume Up presses needed
-    $upPresses = $level / 2.0  # Calculate as a double to avoid rounding
+    $upPresses = $level / 4.0  # Calculate as a double to avoid rounding
 
     # 5. Increment to the desired volume level using exact decimal count
-    for ($i = 0; $i -lt $upPresses; $i += 1) {  # Increment by 0.5 for more precision
+    for ($i = 0; $i -lt $upPresses; $i += 0.5) {  # Increment by 0.5 for more precision
         $wshShell.SendKeys([char]175)  # [char]175 is Volume Up
         Start-Sleep -Milliseconds 5   # Small delay to ensure each key press registers
     }
