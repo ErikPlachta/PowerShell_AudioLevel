@@ -21,7 +21,7 @@ Using PowerShell to create a COM Object of the type Windows Shell. Then running 
     Updated:    10/26/2024
     Version:    0.0.2
     0.0.1 | 11/09/2021 | Erik Plachta | Initial Version
-    0.0.2 | 10/26/2024 | Erik Plachta | FEAT: Add validation. BUG: Fix volume level calculation.
+    0.0.2 | 10/26/2024 | Erik Plachta | FEAT: Add validation. Add updated logic. BUG: Fix volume level calculation.
 #>
 function Set-AudioLevel {
     param(
